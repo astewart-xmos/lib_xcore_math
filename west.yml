@@ -1,0 +1,16 @@
+manifest:
+
+  defaults:
+      remote: xmos
+      remote: unity
+
+  remotes:
+    - name: xmos
+      url-base: git@github.com:xmos
+    
+    - name: unity
+      url-base: git@github.com:ThrowTheSwitch
+
+  projects:
+    - name: unity
+      revision: v2.5.2
