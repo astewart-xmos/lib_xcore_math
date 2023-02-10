@@ -125,7 +125,7 @@ extern "C" {
  * long.
  *
  * `state` is a pointer to a buffer (supplied by the user at initialization) containing the state
- * data -- a history of the `num_taps` most recent input samples. `state` is used in a circular
+ * data - a history of the `num_taps` most recent input samples. `state` is used in a circular
  * fashion with `head` indicating the index at which the next sample will be inserted.
  * @endparblock
  * 
@@ -227,7 +227,7 @@ extern "C" {
  * @parblock
  * 
  * 1. `state` is a circular buffer, and so the index of `x[t]` within `state` changes with each
- *    input sample. The `state` field of this struct is considered to be opaque -- its exact usage
+ *    input sample. The `state` field of this struct is considered to be opaque - its exact usage
  *    may change between versions.
  * 
  * 2. Ordinarily integer sums are associative, so the order in which elements are added added does
@@ -448,7 +448,7 @@ int32_t filter_fir_s32(
  * long, and must begin at a word-aligned address.
  *
  * `state` is a pointer to a buffer (supplied by the user at initialization) containing the state
- * data -- a history of the `num_taps` most recent input samples. `state` must begin at a
+ * data - a history of the `num_taps` most recent input samples. `state` must begin at a
  * word-aligned address.
  * @endparblock
  * 
